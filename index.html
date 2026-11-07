@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fabiano de Oliveira — Currículo</title>
+<meta name="description" content="Bacharel em Administração com experiência em logística, atendimento ao cliente e vendas. Limeira - SP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f6;--surface:#fff;--ink:#16202b;--muted:#586473;--line:#dfe4e8;
+  --accent:#0d6b63;--accent-ink:#fff;--tag:#e3f0ee;--tag-ink:#0a504a;
+  --hero:#0c2f33;--hero-ink:#f2f7f6;--hero-muted:#b4cbc9;--hero-chip:rgba(255,255,255,.1);
+  --shadow:0 1px 2px rgba(16,32,43,.06),0 8px 24px -12px rgba(16,32,43,.12);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1418;--surface:#171e25;--ink:#e8ecf0;--muted:#9aa6b2;--line:#27313b;--accent:#4fc3b5;--accent-ink:#08201d;--tag:#1b312f;--tag-ink:#9fe0d6;--hero:#0a1f22;--shadow:0 1px 2px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#0f1418;--surface:#171e25;--ink:#e8ecf0;--muted:#9aa6b2;--line:#27313b;--accent:#4fc3b5;--accent-ink:#08201d;--tag:#1b312f;--tag-ink:#9fe0d6;--hero:#0a1f22;--shadow:0 1px 2px rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Archivo,"Arial Narrow",Arial,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:4px;padding-top:10px;padding-bottom:10px;overflow-x:auto}
+nav a{padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.92rem;color:var(--muted);white-space:nowrap;transition:background .15s,color .15s}
+nav a:hover{color:var(--ink);background:var(--tag)}
+nav button{margin-left:auto;flex:none;padding:6px 14px}
+
+button,.btn{font:600 .92rem "Public Sans",sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 18px;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s,border-color .15s,background .15s}
+button:hover,.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{transform:translateY(-1px)}
+
+header{padding:72px 0 48px}
+header h1{font-family:"Times New Roman",Times,serif;font-size:clamp(2.5rem,8vw,4.4rem);font-weight:700;letter-spacing:-.01em}
+header .role{font:600 1.1rem Archivo,sans-serif;color:var(--accent);margin:14px 0 22px;letter-spacing:.01em}
+header p{max-width:56ch;font-size:1.1rem;color:var(--muted);margin:0 0 26px}
+header .chips{margin-bottom:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--tag);color:var(--tag-ink);padding:5px 13px;border-radius:99px;font-size:.88rem;font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+
+section{padding:52px 0 8px}
+section>.wrap>h2{font-size:1.65rem;margin-bottom:26px;display:flex;align-items:center;gap:14px;letter-spacing:-.01em}
+section>.wrap>h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.filters button{border-radius:99px;padding:6px 15px;font-weight:500;font-size:.88rem}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+.timeline{list-style:none;margin:0;padding:0 0 0 22px}
+.job{position:relative;margin:0 0 16px;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.job::before{content:"";position:absolute;left:-30px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.job[hidden]{display:none}
+.job h3{font-size:1.1rem;font-weight:700;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.job .org{font-weight:600;color:var(--accent);margin:4px 0 2px}
+.job .meta{color:var(--muted);font-size:.88rem;margin-bottom:8px}
+.job p{margin:0;max-width:62ch;color:var(--ink);opacity:.9}
+.tag{font:600 .74rem "Public Sans",sans-serif;background:var(--tag);color:var(--tag-ink);padding:2px 10px;border-radius:99px}
+
+.two{display:grid;gap:36px;grid-template-columns:1fr 1fr}
+@media(max-width:640px){.two{grid-template-columns:1fr}.timeline{padding-left:18px}.job{padding:16px 16px}.job::before{left:-26px}}
+.stack{display:grid;gap:32px}
+.sub{font:700 1.1rem Archivo,sans-serif;margin:0 0 14px}
+ul.plain{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+ul.plain li{padding:14px 18px;border-bottom:1px solid var(--line);font-weight:500}
+ul.plain li:last-child{border-bottom:0}
+ul.plain small{display:block;color:var(--muted);font-weight:400;font-size:.88rem}
+
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:28px 0 0;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.contact dt{color:var(--muted)}
+.contact dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+footer{margin-top:48px;padding:28px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);text-align:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{nav,.filters,.actions,header button{display:none}header{background:none;color:#000;padding:0 0 16px}header p,header .role{color:#333;opacity:1}header .chip{border-color:#999;color:#000;background:none}.job,ul.plain,.contact dl{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<nav aria-label="Seções">
+  <div class="wrap">
+    <a href="#experiencia">Experiência</a>
+    <a href="#formacao">Formação</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+    <button id="theme" type="button" aria-label="Alternar modo escuro">Modo escuro</button>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <h1>Fabiano de Oliveira</h1>
+    <div class="role">Logística · Atendimento · Vendas</div>
+    <p>Bacharel em Administração com experiência em logística, atendimento ao cliente e vendas. Aprendo rápido e trabalho bem em equipe.</p>
+    <div class="chips"><span class="chip">Início imediato</span><span class="chip">Disponibilidade de horário</span><span class="chip">Limeira - SP</span></div>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/5519953269887">Chamar no WhatsApp</a>
+      <button id="copy" type="button">Copiar e-mail</button>
+    </div>
+  </div>
+</header>
+
+<section id="experiencia">
+  <div class="wrap">
+    <h2>Experiência profissional</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por área"></div>
+    <ol class="timeline" id="jobs"></ol>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="wrap stack">
+    <div>
+      <h2 class="sub">Graduação</h2>
+      <ul class="plain"><li>Bacharel em Administração<small>Anhanguera Uniderp · 2018 – 2022</small></li></ul>
+    </div>
+    <div>
+      <h2 class="sub">Cursos</h2>
+      <ul class="plain">
+        <li>Gestão do nível de serviço logístico<small>SEST SENAT · 2026</small></li>
+        <li>Logística integrada: suprimentos, distribuição e supply chain<small>SEST SENAT · 2026</small></li>
+        <li>Excel Intermediário<small>Santander Open Academy · 2026</small></li>
+        <li>Língua Inglesa I e II (básico)<small>Anhanguera Uniderp · 2020</small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades">
+  <div class="wrap two">
+    <div>
+      <h2 class="sub">Habilidades</h2>
+      <div class="chips"><span class="chip">Pacote Office</span><span class="chip">Word</span><span class="chip">Excel</span><span class="chip">PowerPoint</span><span class="chip">Colaboração e trabalho em equipe</span></div>
+    </div>
+    <div>
+      <h2 class="sub">Informações complementares</h2>
+      <ul class="plain">
+        <li>Disponibilidade para início imediato</li>
+        <li>Facilidade em aprender novas habilidades</li>
+        <li>Toda documentação em ordem</li>
+        <li>Disponibilidade de horário</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="wrap">
+    <h2>Contato</h2>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/5519953269887">Chamar no WhatsApp</a>
+      <a class="btn" href="tel:+5519999517524">Ligar</a>
+      <a class="btn" href="mailto:blessed_fabiano@outlook.com">Enviar e-mail</a>
+    </div>
+    <dl>
+      <dt>Telefone</dt><dd>(19) 99951-7524</dd>
+      <dt>WhatsApp</dt><dd>(19) 95326-9887</dd>
+      <dt>E-mail</dt><dd>blessed_fabiano@outlook.com</dd>
+      <dt>Cidade</dt><dd>Limeira - SP</dd>
+    </dl>
+  </div>
+</section>
+
+<footer><div class="wrap">Fabiano de Oliveira · 2026</div></footer>
+
+<script>
+var JOBS=[
+["Auxiliar logístico","Logística","Nexus Gestão de Pessoas (Mercado Livre – DHL)","3 meses · 2026 · 2º turno","Indução, separação, aduana, movimentação de produtos, embalagem e etiquetagem."],
+["Operador de teleatendimento","Atendimento e vendas","Konecta Brazil Outsourcing","2 anos · 2024 – 2026","Atendimento em geral, cartões, faturas, empréstimos, problemas com aplicativo e demais serviços.","Atendimento"],
+["Promotor de vendas","Atendimento e vendas","Adilis Trade Marketing (Ambev)","10 meses · 2021 · meio período","Organizar layouts de produtos, evitar rupturas e controlar vencimentos."],
+["Estagiário administrativo — protocolo e arquivamento","Administrativo","Departamento de Estrada e Rodagem (DER) – Rio Claro, SP","2 meses · 2019","Emitir protocolos, colher assinaturas, conferir, confirmar e enviar documentos entre os departamentos via sistema (SPdoc)."],
+["Pintor residencial","Outros","Autônomo","3 anos · 2016 – 2019","Preparar parede, lixar, pintar, impermeabilizar e envernizar madeira."],
+["Ajudante geral","Outros","Voith Serviços Industriais","3 meses · 2016","Limpeza pesada durante e após a obra (construção da Mercedes-Benz)."],
+["Auxiliar de expedição","Logística","Classe A Recursos Humanos (Mastra)","2008 – 2012 · intermitente","Separar escapamentos e carregar os caminhões."],
+["Auxiliar de expedição","Logística","Exímia Serviços Temporários (TRW)","2007 – 2008 · intermitente","Separar discos de freios e carregar os caminhões."],
+["Separador e auxiliar de expedição","Logística","GenteLog (CDI – Nestlé)","5 meses · 2006","Separar e conferir produtos, montar e organizar os paletes, carregar e descarregar os caminhões."]
+];
+var AREAS=["Todas","Logística","Atendimento e vendas","Administrativo","Outros"];
+var list=document.getElementById("jobs"),fil=document.getElementById("filters");
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+list.innerHTML=JOBS.map(function(j){return '<li class="job" data-area="'+j[1]+'"><h3>'+esc(j[0])+'<span class="tag">'+esc(j[5]||j[1])+'</span></h3><div class="org">'+esc(j[2])+'</div><div class="meta">'+esc(j[3])+'</div><p>'+esc(j[4])+'</p></li>'}).join("");
+AREAS.forEach(function(a,i){
+  var b=document.createElement("button");b.type="button";b.textContent=a;b.setAttribute("aria-pressed",i===0);
+  b.onclick=function(){
+    Array.prototype.forEach.call(fil.children,function(x){x.setAttribute("aria-pressed",x===b)});
+    Array.prototype.forEach.call(list.children,function(li){li.hidden=!(a==="Todas"||li.dataset.area===a)});
+  };
+  fil.appendChild(b);
+});
+var root=document.documentElement,tb=document.getElementById("theme");
+function isDark(){var t=root.getAttribute("data-theme");return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function sync(){tb.textContent=isDark()?"Modo claro":"Modo escuro"}
+try{var saved=localStorage.getItem("theme");if(saved)root.setAttribute("data-theme",saved)}catch(e){}
+sync();
+tb.onclick=function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}sync()};
+var cb=document.getElementById("copy");
+cb.onclick=function(){
+  var m="blessed_fabiano@outlook.com";
+  function ok(){cb.textContent="E-mail copiado";setTimeout(function(){cb.textContent="Copiar e-mail"},2000)}
+  if(navigator.clipboard){navigator.clipboard.writeText(m).then(ok,function(){location.href="mailto:"+m})}else{location.href="mailto:"+m}
+};
+</script>
+</body>
+</html>
